@@ -1,0 +1,40 @@
+<GuiXml>
+	<Controls>
+		<!-- based on Chat2Clipboard -->
+		<TopLevelControl name="HarvestDebugClipboard" mouseEnabled="true" hidden="true" tier="HIGH" level="3">
+			<Dimensions x="400" y="200" />
+			<Anchor point="CENTER" />
+
+			<Controls>
+				<Label name="$(parent)Top" font="ZoFontGame" color="FFFFFF" text="SI_HARVEST_CTRLC" horizontalAlignment="LEFT" >
+					<Anchor point="TOPRIGHT" relativeTo="$(parent)"  relativePoint="TOPRIGHT" offsetX="4" offsetY="4" />
+				</Label>
+				<Backdrop name="$(parent)Output" inherits="ZO_EditBackdrop">
+					<Anchor point="TOPLEFT" offsetX="20" offsetY="40" />
+					<Anchor point="BOTTOMRIGHT" offsetX="-20" offsetY="-20" />
+					<Controls>
+						<EditBox name="$(parent)Box" inherits="ZO_DefaultEditForBackdrop ZO_EditDefaultText" editEnabled="false" multiLine="true" maxInputCharacters="10000">
+							<OnTextChanged>
+								self:GetParent():GetParent():SetHidden(false)
+								self:SelectAll()
+								self:TakeFocus()
+							</OnTextChanged>
+							<OnFocusLost>
+								self:GetParent():GetParent():SetHidden(true)
+							</OnFocusLost>
+						</EditBox>
+					</Controls>
+				</Backdrop>
+				
+				<Backdrop name="$(parent)Bg" integralWrapping="true">
+					<Anchor point="TOPLEFT" offsetX="-4" offsetY="-4" />
+					<Anchor point="BOTTOMRIGHT" offsetX="4" offsetY="4" />
+
+					<Edge file="EsoUI/Art/ChatWindow/chat_BG_edge.dds" edgeFileWidth="256" edgeFileHeight="256" edgeSize="32" />
+					<Center file="EsoUI/Art/ChatWindow/chat_BG_center.dds" />
+					<Insets left="32" top="32" right="-32" bottom="-32" />
+				</Backdrop>
+			</Controls>
+		</TopLevelControl>
+	</Controls>
+</GuiXml>

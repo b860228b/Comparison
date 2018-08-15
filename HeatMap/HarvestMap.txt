@@ -1,0 +1,80 @@
+## Title: HarvestMap
+## Author: Shinni
+## Version: 3.11.4
+## APIVersion: 100023 100024
+## OptionalDependsOn: LibAddonMenu-2.0 LibMapPing LibGPS LibMapPins-1.0 MiniMap VotansMiniMap AUI
+## SavedVariables: Harvest_SavedVars
+
+Libs/LibStub/LibStub.lua
+Libs/LibAddonMenu-2.0/LibAddonMenu-2.0.lua
+Libs/LibAddonMenu-2.0/controls/panel.lua
+Libs/LibAddonMenu-2.0/controls/submenu.lua
+Libs/LibAddonMenu-2.0/controls/button.lua
+Libs/LibAddonMenu-2.0/controls/checkbox.lua
+Libs/LibAddonMenu-2.0/controls/colorpicker.lua
+Libs/LibAddonMenu-2.0/controls/custom.lua
+Libs/LibAddonMenu-2.0/controls/description.lua
+Libs/LibAddonMenu-2.0/controls/dropdown.lua
+Libs/LibAddonMenu-2.0/controls/editbox.lua
+Libs/LibAddonMenu-2.0/controls/header.lua
+Libs/LibAddonMenu-2.0/controls/slider.lua
+Libs/LibAddonMenu-2.0/controls/texture.lua
+Libs/LibAddonMenu-2.0/controls/iconpicker.lua
+Libs/LibMapPins-1.0/LibMapPins-1.0.lua
+Libs/LibMapPing/LibMapPing.lua
+Libs/LibGPS/LibGPS.lua
+Libs/Lib3D/Lib3D.lua
+Libs/Lib3D/GlobalToWorldFactors.lua
+Libs/LibMainMenu/LibMainMenu.lua
+Libs/LibQuickPin/LibQuickPin.lua
+## Libs/LibCustomTitles/LibCustomTitles.lua
+
+
+Constants.lua
+PinTypes.lua
+Callback.lua
+Interaction.lua
+MapTools.lua
+HarvestMap.lua
+
+Localization/UI/$(language).lua
+Localization/UI/default.lua
+
+Options/Defaults.lua
+Options/GetterSetter.lua
+Options/LAMPanel.lua
+Options/FilterMenu.lua
+Options/LoadSettings.lua
+Options/MainMenu.lua
+
+Data/Data.lua
+Data/Serialization.lua
+Data/MapCache.lua
+Data/ZoneCache.lua
+Data/Update.lua
+Data/Logging.lua
+
+Pins/QuickPins.lua
+Pins/MapPins.lua
+Pins/InRangePins.lua
+Pins/HiddenPins.lua
+Pins/WorldPins.xml
+
+HeatMap/HeatMapDisplay.lua
+HeatMap/HeatMapCalculation.lua
+
+Tour/BaseInterface.lua
+Tour/TourDisplay.lua
+Tour/PinTypeFilters.lua
+Tour/GeneratorInterface.lua
+Tour/GeneratorLogic.lua
+Tour/Helper.lua
+Tour/Editor.lua
+Tour/TourLoader.lua
+Tour/Path.lua
+Tour/Controls.xml
+
+Debug.xml
+Debug.lua
+
+Bindings.xml
